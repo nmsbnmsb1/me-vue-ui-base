@@ -1,0 +1,39 @@
+{
+	"name": "me-vue-ui-base",
+	"version": "1.0.0",
+	"description": "a lib to offer some helper-classes for any ui-framework.",
+	"main": "lib/index.js",
+	"module": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"serve": "vite",
+		"build": "rm -rf dist/ && vite build",
+		"lib": "tsc"
+	},
+	"dependencies": {
+		"vue": "^3.0.5",
+		"vue-i18n": "9.0.0-beta.18",
+		"throttle-debounce": "^3.0.1",
+		"me-actions": "git+https://github.com/nmsbnmsb1/me-actions.git",
+		"me-utils-browserify": "git+https://github.com/nmsbnmsb1/me-utils-browserify.git",
+		"@popperjs/core": "^2.6.0"
+	},
+	"devDependencies": {
+		"@types/throttle-debounce": "^2.1.0",
+		"typescript": "^4.1.3",
+		"prettier": "^2.2.1",
+		"vite": "^2.0.0-beta.1",
+		"@vue/compiler-sfc": "^3.0.5",
+		"@vuedx/typecheck": "^0.4.1",
+		"@vuedx/typescript-plugin-vue": "^0.4.1",
+		"@vitejs/plugin-vue": "^1.0.2",
+		"eslint": "^7.17.0",
+		"vue-eslint-parser": "^7.3.0",
+		"@typescript-eslint/eslint-plugin": "4.11.1",
+		"@typescript-eslint/parser": "^4.11.1",
+		"eslint-plugin-vue": "^7.4.0",
+		"eslint-plugin-prettier": "^3.3.0",
+		"@vue/eslint-config-prettier": "^6.0.0",
+		"@vue/eslint-config-typescript": "^7.0.0"
+	}
+}
