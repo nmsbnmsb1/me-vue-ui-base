@@ -1,0 +1,158 @@
+@media (max-width: 991px) {
+  .sm\:z {
+    z-index: 11;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:z {
+    z-index: 12;
+  }
+}
+:root {
+  --text-mainly: #333fff;
+}
+.text-mainly {
+  color: var(--text-mainly);
+}
+.popup {
+  position: absolute;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 1px;
+}
+.popup-fade-enter-active {
+  animation: popup-enter 1s ease;
+}
+@keyframes popup-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.popup-fade-leave-active {
+  animation: popup-out 1s ease forwards;
+}
+@keyframes popup-out {
+  0% {
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.popup-arrow {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+}
+.popup-arrow::after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  content: " ";
+}
+.popup-arrow,
+.popup-arrow::after {
+  position: absolute;
+  z-index: -1;
+  width: 6px;
+  height: 6px;
+}
+.popup-arrow::after {
+  background: aqua;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  content: "";
+  transform: rotate(45deg);
+}
+.body {
+  padding-right: 0;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+.modal-fade-enter-active {
+  animation: modal-enter 2s ease;
+}
+@keyframes modal-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.modal-fade-leave-active {
+  animation: modal-out 2s ease forwards;
+}
+@keyframes modal-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.popup[data-popper-placement^="right"] {
+  margin-left: 12px;
+}
+.popup_full {
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+.popup_full[data-popper-placement^="right"] {
+  margin-left: 12px;
+}
+.popup_full[data-popper-placement^="right"] .popup-arrow {
+  left: -6px;
+  border-right-color: #333333;
+  border-left-width: 0;
+}
+.popup_full[data-popper-placement^="right"] .popup-arrow::after {
+  top: -6px;
+  left: 1px;
+  border-right-color: aqua;
+  border-left-width: 0;
+}
+.popup_lock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 30%;
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 1px;
+}
+.body_lock {
+  background-color: blue;
+}
+.popup_modal {
+  opacity: 0.9;
+}

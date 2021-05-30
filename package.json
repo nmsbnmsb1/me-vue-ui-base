@@ -1,0 +1,24 @@
+{
+  "name": "me-vue-ui-base",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "me-actions": "git+https://github.com/nmsbnmsb1/me-actions.git",
+    "me-utils-browserify": "git+https://github.com/nmsbnmsb1/me-utils-browserify.git",
+    "throttle-debounce": "^3.0.1",
+    "@popperjs/core": "^2.9.2",
+    "vue": "^3.0.11",
+    "vue-i18n": "^9.1.6"
+  },
+  "devDependencies": {
+    "@types/throttle-debounce": "^2.1.0",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.4",
+    "vue-tsc": "^0.1.6"
+  }
+}
